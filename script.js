@@ -101,6 +101,7 @@ const closeModal = () => {
 };
 
 const start = () => {
+  console.log(startTime)
   // If already started, do not start again
   if (startTime) return;
 
@@ -108,7 +109,7 @@ const start = () => {
   countdownOverlay.style.display = "flex";
 
   const startCountdown = setInterval(() => {
-    countdownOverlay.innerHTML = '<h1>${count}</h1>';
+    countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
     // finished timer
     if (count == 0) {
