@@ -117,6 +117,10 @@ body {
   width: 100%;
 }
 
+h3 {
+  text-align: center;
+}
+
 .title2 {
   color: white;
   display: block;
@@ -139,12 +143,14 @@ button {
   border-radius: 10px;
   border: 2px solid #9dffad;
   cursor: pointer;
+  margin-top: 42px;
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  
 }
 
 .card {
@@ -191,7 +197,11 @@ button {
   .card {
     flex-direction: column;
   }
-  h3 {
-    text-align: center;
-}
+  #histories {
+  
+    grid-template-columns: auto;
+   
+    
+  }
+
 }
