@@ -104,6 +104,7 @@ const closeModal = () => {
 };
 
 const start = () => {
+  countdownOverlay.innerHTML=''
   // If already started, do not start again
   if (startTime) return;
   
